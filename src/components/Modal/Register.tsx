@@ -31,7 +31,7 @@ const Register = ({ text, variant }: ModalProps) => {
     let response;
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/users",
+        "https://server-course-api-ha4i.onrender.com/api/users",
         {
           email,
           name,

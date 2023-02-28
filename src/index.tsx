@@ -4,6 +4,9 @@ import { UserProvider } from "./context/index";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+
+disableReactDevTools();
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

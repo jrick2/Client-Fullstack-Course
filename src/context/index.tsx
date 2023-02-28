@@ -29,7 +29,9 @@ const UserProvider = ({ children }: any) => {
   }
 
   const fetchUser = async () => {
-    const { data: response } = await axios.get("http://localhost:5000/api/me");
+    const { data: response } = await axios.get(
+      "https://server-course-api-ha4i.onrender.com/api/me"
+    );
 
     if (response.data && response.data.user) {
       setUser({

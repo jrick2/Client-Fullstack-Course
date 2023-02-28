@@ -30,7 +30,7 @@ const Login = ({ text, variant }: ModalProps) => {
     let response;
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/api/login/",
+        "https://server-course-api-ha4i.onrender.com/api/login",
         {
           email,
           password,

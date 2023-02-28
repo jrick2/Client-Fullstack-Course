@@ -64,7 +64,7 @@ const Articles = () => {
 
   const fetchArticles = async () => {
     const { data: response } = await axios.get(
-      "http://localhost:5000/articles"
+      "https://server-course-api-ha4i.onrender.com/articles"
     );
     setArticles(response);
   };

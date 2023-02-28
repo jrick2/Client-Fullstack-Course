@@ -45,7 +45,7 @@ const ArticlePlan = () => {
 
   const fetchPrices = async () => {
     const { data: response } = await axios.get(
-      "http://localhost:5000/api/prices"
+      "https://server-course-api-ha4i.onrender.com/api/prices"
     );
     console.log(response);
     setPrices(response.data);
@@ -53,7 +53,7 @@ const ArticlePlan = () => {
 
   const createSession = async (priceId: string) => {
     const { data: response } = await axios.post(
-      "http://localhost:5000/api/session",
+      "https://server-course-api-ha4i.onrender.com/api/session",
       {
         priceId,
       }
