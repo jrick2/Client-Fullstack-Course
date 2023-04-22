@@ -9,6 +9,7 @@ const HeroComponent = styled.header`
   padding: 5rem 0;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fized;
   background-size: cover;
 `;
 
@@ -35,8 +36,8 @@ const Hero = () => {
         <HeaderContainer>
           <Heading>Buy Our Course</Heading>
           <SubHeading>
-            Your life is shit anyway, why waste your time there if you could
-            waste your time here and make us money.
+            Your life is shit anyway, why waste your time if you could waste
+            your time here, aswell as make us money.
           </SubHeading>
           <Register text="Signup" variant="primary" />
           <Login text="Login" variant="danger" />
